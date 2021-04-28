@@ -17,7 +17,7 @@
 	SELECT * 
 	FROM `ospiti` 
 	WHERE `name` 
-	LIKE 'd%';
+	LIKE 'D%';
 
 5) Calcola il totale degli ordini accepted
 	SELECT SUM(`id`) AS totale_ordini_accepted 
