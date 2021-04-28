@@ -20,7 +20,14 @@
 	LIKE 'D%';
 
 5) Calcola il totale degli ordini accepted
+
+	totale di transazioni andate a buon fine:
 	SELECT SUM(`id`) AS totale_ordini_accepted 
+	FROM `pagamenti` 
+	WHERE `status` = 'accepted';
+
+	oppure, per la somma totale dei prezzi degli ordini accettati:
+	SELECT SUM(`price`) AS prezzo_totale_ordini_accepted 
 	FROM `pagamenti` 
 	WHERE `status` = 'accepted';
 
